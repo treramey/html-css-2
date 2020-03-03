@@ -1,0 +1,326 @@
+html body {
+    height: 100%;
+    color: rgba(var(--i1d,38,38,38),1);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+#root, article, div, footer, header, main, nav, section {
+    align-items: stretch;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#root{
+    z-index: 0;
+    height: 100%;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.main{
+    background-color: rgba(var(--b3f,250,250,250),1);
+    flex-grow: 1;
+    order: 4;
+
+}
+
+.artical{
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 30px auto 0;
+    max-width: 935px;
+    padding-bottom: 44px;
+    width: 100%;
+
+}
+
+.leftPhoto{
+    align-self: center;
+    background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+    background-position: 0 0;
+    background-size: 454px 618px;
+    flex-basis: 454px;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
+
+}
+
+.innerPhoto{
+    margin: 99px 0 0 151px;
+    position: relative;
+}
+
+.photo{
+    height: 427px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 240px;
+}
+
+.rightColmn{
+    color: #262626;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 12px;
+    max-width: 350px;
+    width: 100%;
+
+}
+
+.topBox{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.logo{
+    background-repeat: no-repeat;
+    background-position: -98px 0;
+    height: 51px;
+    width: 175px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_576406ccc24b.png/576406ccc24b.png);
+    display: block;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+    margin: 22px auto 12px;
+}
+
+.formWrapper{
+    margin-bottom: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.signUp{
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 17px;
+    margin: 0 40px 10px;
+    color: #999;
+    text-align: center;
+}
+
+.buttonWrapper{
+    margin: 8px 40px 8px 40px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.button{
+    border: 1px solid transparent;
+    background-color: #3897f0;
+    border-radius: 4px;
+    position: relative;
+    color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    text-overflow: ellipsis;
+    user-select: none;
+    width: auto;
+    padding: 5px 9px;
+
+}
+.facelogo{
+    background-repeat: no-repeat;
+    background-position: -320px -242px;
+    height: 16px;
+    width: 16px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_576406ccc24b.png/576406ccc24b.png);
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+}
+
+.orWrapper{
+    flex-direction: row;
+    margin: 10px 40px 18px;
+}
+
+.Line{
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #dbdbdb;
+    height: 1px;
+    position: relative;
+    top: .45em;
+}
+.or{
+    color: #999;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+}
+.inputWrapper{
+    margin: 0 40px 6px;
+}
+
+.input{
+    align-items: center;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #262626;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
+
+.label{
+    display: flex;
+    height: 36px;
+    flex: 1 0 0;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    min-width: 0;
+}
+
+.inputText{
+    color: #999;
+    font-size: 12px;
+    height: 36px;
+    left: 8px;
+    line-height: 36px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-overflow: ellipsis;
+    transform-origin: left;
+    transition: transform ease-out .1s;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.inputBox{
+    font-size: 16px;
+    border: 0;
+    flex: 1 0 auto;
+    margin: 0;
+    outline: 0;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+    background: #fafafa;
+}
+
+.termsWrapper{
+    color: #999;
+    margin: 10px 60px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.termsWrapper > a {
+    color: #999;
+    font-weight: 600;
+}
+
+.secondBoxWrapper{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+
+}
+
+.secondBoxWrapper > p {
+    color: #262626;
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+
+}
+
+.secondBoxWrapper > p > a {
+    text-decoration: none;
+    color: #3897f0;
+}
+
+.getApp{
+    color: #262626;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+
+.appStoreWrapper{
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.appStoreWrapper > img {
+    height: 40px;
+}
+
+.foot{
+    order: 5;
+    padding: 0 20px;
+    background-color: #fafafa;
+}
+
+.footerWrapper{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-transform: uppercase;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 38px 0;
+}
+
+.navListWrapper{
+    flex-grow: 1;
+    margin-bottom: 3px;
+    list-style: none;
+}
+
+.navList{
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-right: 16px;
+}
+
+.copyRight{
+    color: #999;
+}
